@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+{
+    "name": "UDES Scanned By Tracking",
+    "version": "11.0",
+    "summary": "Inventory, Logistics, Warehousing",
+    "description": "Extension of udes_stock model for UDES, to add the user to a move line",
+    "depends": ["stock",],
+    "category": "Warehouse",
+    "version": "0.1",
+    "data": ["views/stock_move_line.xml", "views/stock_picking.xml",],
+    "demo": [],
+}
+

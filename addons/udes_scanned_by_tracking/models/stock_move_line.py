@@ -26,6 +26,8 @@ class StockMoveLine(models.Model):
 
     @api.model
     def _add_user_tracking_data(self, vals):
+        """Inject/overwrite user tracking data into vals"""
+
         if vals.get("qty_done", 0) > 0:
             if not self.env.real_uid:
                 _logger.warning(
